@@ -12,7 +12,7 @@ function deepestChild(){
   const div = document.querySelectorAll('div.grand-node')
   for (var i = 0; i < div.length; i++) {
     if(i === (div.length - 1)){
-      return div[i]
+      return div[i].innerHTML
     }
   }
 }
