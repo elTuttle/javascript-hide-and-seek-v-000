@@ -14,11 +14,9 @@ function deepestChild(){
 }
 
 function increaseRankBy(n){
-  const lis = document.querySelectorAll('ul.ranked-list li')
-
-  console.log(lis)
-
+  const lis = document.getElementById('app').querySelectorAll('ul.ranked-list li')
+ 
   for (let i = 0; i < lis.length; i++) {
-    lis[i].innerHTML = (lis[i] + 1)
+    lis[i].innerHTML = (i + 1).toString()
   }
 }
