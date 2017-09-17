@@ -18,7 +18,7 @@ function increaseRankBy(n){
 
   console.log(lis)
 
-  for (var i = 0; i < lis.length; i++) {
+  for (let i = 0; i < lis.length; i++) {
     lis[i].innerHTML = (lis[i] + 1)
   }
 }
