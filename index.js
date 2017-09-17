@@ -9,13 +9,8 @@ function nestedTarget(){
 }
 
 function deepestChild(){
-  const div = document.querySelectorAll('div.grand-node')
-  console.log(div)
-  for (var i = 0; i < div.length; i++) {
-    if(i === (div.length - 1)){
-      return div[i].innerHTML
-    }
-  }
+  const div = document.querySelector('#grand-node div div div div')
+  return div
 }
 
 function increaseRankBy(n){
